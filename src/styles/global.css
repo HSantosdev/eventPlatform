@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 body{
         @apply bg-slate-500 text-slate-900;
+=======
+
+body{
+	@apply bg-gray-900 text-gray-100;
+	-webkit-font-smoothing: antialiased; /* Ajuste para melhor visualizacao das fonts no chrome com distribuicao linux */
+>>>>>>> dev
 }

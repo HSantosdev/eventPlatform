@@ -1,9 +1,12 @@
+import { RocketLaunch } from "phosphor-react"
+
 export function Footer() {
   return (
-    <div className="w-full h-full bg-gray-700 border-t mt-6 border-gray-300 flex justify-between items-center">
-        <img src="https://i.pinimg.com/736x/92/1f/66/921f6600d00a25dbe39d0315a3904e30.jpg" alt="Logo Foguete" className="h-12 w-12 p-2"/>
-        <span> Event Platform Todos os direitos reservado</span>
-        <span className="p-4">Politicas de Privacidade</span>
+    <div className="w-full h-full max-h-16 max-w-5xl bg-gray-700 border-t mt-4 border-gray-300 flex justify-between items-center">
+      {/* <img src="https://i.pinimg.com/736x/92/1f/66/921f6600d00a25dbe39d0315a3904e30.jpg" alt="Logo Foguete" className="h-12 w-12 p-1" />*/}
+      <RocketLaunch size={30} className="ml-3" />
+      <span> Event Platform Todos os direitos reservado</span>
+      <span className="mr-6">Politicas de Privacidade</span>
     </div>
   )
 }

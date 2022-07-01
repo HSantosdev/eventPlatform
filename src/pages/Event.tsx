@@ -14,8 +14,8 @@ export function Event() {
 		<div className="flex flex-col min-h-screen">
 			<Header />
 			<main className="flex flex-1">
-				<div className="flex flex-col">
-					{slug ? <Video /> : <div className="w-[60rem] h-[81vh]" />}
+				<div className="flex-1 flex-col">
+					{slug ? <Video lessonSlug={slug} /> : <div className="w-[60rem] h-[81vh]" />}
 					{/* <Video /> */}
 					<Footer />
 				</div>

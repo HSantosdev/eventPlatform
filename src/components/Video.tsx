@@ -1,5 +1,5 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { CaretRight, Circle, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
+import { CaretRight, Circle, DiscordLogo, FileArrowDown, Lightning, RocketLaunch } from "phosphor-react";
 import { gql, useQuery } from "@apollo/client";
 
 import '@vime/core/themes/default.css';
@@ -56,15 +56,17 @@ export function Video(props: VideoProps) {
 
 	return (
 		<div className="flex-1">
-			<div className="bg-black flex">
-				<div className="h-full w-full max-w-[1100px] max-h-[50vh] aspect-video border border-gray-200">
+			
+			<div className="bg-black flex p-0.5">
+				<div className="h-full w-full aspect-video border border-gray-200">
 					<Player>
 						<Youtube videoId={data.lesson.videoId} />
 						<DefaultUi />
 					</Player>
 				</div>
 			</div>
-			<div className="p-8  max-w-[1100px] mx-auto">
+			<div className="p-6">
+			<div className="p-8  max-w-[1100px]">
 				<div className="flex items-start gap-16">
 					<div className="flex-1">
 						<h1 className="text-2xl font-bold">{data.lesson.title}</h1>
@@ -114,8 +116,14 @@ export function Video(props: VideoProps) {
 					</div>
 					<div className="h-full p-6 flex items-center"> <CaretRight size={24} /></div>
 				</a>
+			</div>
+			</div>
 
-
+			<div className="h-16 w-full bg-gray-700 border-t border-gray-300 flex justify-between items-center">
+				{/* <img src="https://i.pinimg.com/736x/92/1f/66/921f6600d00a25dbe39d0315a3904e30.jpg" alt="Logo Foguete" className="h-12 w-12 p-1" />*/}
+				<RocketLaunch size={30} className="ml-3" />
+     			 <span> Event Platform Todos os direitos reservado</span>
+      			<span className="mr-6">Politicas de Privacidade</span>
 			</div>
 		</div>
 	)
